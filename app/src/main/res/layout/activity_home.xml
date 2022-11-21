@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B4F72"
+        tools:context=".HomeActivity">
+
+    <TextView
+            android:text="Ingrese a su cuenta"
+            android:layout_width="168dp"
+            android:layout_height="23dp"
+            android:id="@+id/textini"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:textSize="18sp" android:textColor="@color/white" app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintVertical_bias="0.271" tools:ignore="TextContrastCheck"/>
+    <Button
+            android:text="Ingresar"
+            android:layout_width="284dp"
+            android:layout_height="50dp" android:id="@+id/buttonIngresar"
+            android:background="@drawable/stylebutton"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintVertical_bias="0.321" app:layout_constraintTop_toBottomOf="@+id/textcontraseña"
+            tools:ignore="TextContrastCheck"/>
+    <EditText
+            android:layout_width="302dp"
+            android:layout_height="46dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/textcorreo"
+            app:layout_constraintTop_toBottomOf="@+id/textini"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="68dp"
+            android:hint="Correo electrónico"
+            android:paddingStart="8dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:background="@drawable/styleplaintext"
+            app:layout_constraintHorizontal_bias="0.458"
+            tools:ignore="TouchTargetSizeCheck"/>
+    <EditText
+            android:layout_width="302dp"
+            android:layout_height="46dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/textcontraseña"
+            app:layout_constraintTop_toBottomOf="@+id/textcorreo"
+            android:layout_marginTop="60dp"
+            android:hint="************"
+            android:paddingStart="8dp"
+            android:drawableStart="@drawable/bloquear"
+            android:drawablePadding="8dp"
+            android:background="@drawable/styleplaintext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.452"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"/>
+    <TextView
+            android:text="¿Aún no te has registrado?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="48dp"
+            app:layout_constraintHorizontal_bias="0.228"/>
+    <TextView
+
+            android:text="Regístrate aquí"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/registrarView"
+            android:textColor="#0DD9D6"
+            app:layout_constraintStart_toEndOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" android:layout_marginTop="48dp"
+            app:layout_constraintHorizontal_bias="0.105"/>
+    <ImageView
+            android:layout_width="176dp"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/essencial"
+            android:drawablePadding="8dp"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
